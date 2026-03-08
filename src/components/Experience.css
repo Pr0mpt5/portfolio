@@ -1,0 +1,132 @@
+.experience {
+  background: var(--color-bg-secondary);
+}
+
+.timeline {
+  position: relative;
+  padding-left: calc(var(--spacing-unit) * 4);
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--color-accent-primary), var(--color-accent-secondary));
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: calc(var(--spacing-unit) * 6);
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: calc(var(--spacing-unit) * -4.5);
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-accent-primary);
+  border: 3px solid var(--color-bg-secondary);
+  box-shadow: 0 0 0 4px var(--color-bg-card);
+}
+
+.timeline-content {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: calc(var(--spacing-unit) * 4);
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateX(8px);
+  border-color: var(--color-accent-primary);
+  box-shadow: 0 8px 24px rgba(0, 217, 255, 0.1);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: calc(var(--spacing-unit) * 2);
+  gap: calc(var(--spacing-unit) * 2);
+}
+
+.timeline-content h3 {
+  color: var(--color-text-primary);
+  font-size: 1.4rem;
+  margin-bottom: calc(var(--spacing-unit) * 1);
+}
+
+.company {
+  color: var(--color-accent-primary);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.period {
+  color: var(--color-accent-secondary);
+  font-weight: 500;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.description {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: calc(var(--spacing-unit) * 3);
+}
+
+.achievements {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-unit) * 1.5);
+}
+
+.achievements li {
+  color: var(--color-text-secondary);
+  padding-left: calc(var(--spacing-unit) * 3);
+  position: relative;
+  line-height: 1.6;
+}
+
+.achievements li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent-primary);
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: calc(var(--spacing-unit) * 3);
+  }
+
+  .timeline-marker {
+    left: calc(var(--spacing-unit) * -3.5);
+  }
+
+  .experience-header {
+    flex-direction: column;
+  }
+
+  .period {
+    white-space: normal;
+  }
+
+  .timeline-content:hover {
+    transform: translateX(4px);
+  }
+}
