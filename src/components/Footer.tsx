@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
         <div className="footer-section">
           <div className="footer-logo">
             <span style={{ color: 'var(--color-accent-primary)' }}>&lt;</span>
-            <span>Alex Rodriguez</span>
+            <span>Jhon A</span>
             <span style={{ color: 'var(--color-accent-primary)' }}>/&gt;</span>
           </div>
           <p className="footer-tagline">
