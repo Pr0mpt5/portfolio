@@ -59,7 +59,7 @@ export const Contact: React.FC = () => {
 #               <div className="method-label">Phone</div>
 #               <div className="method-value">+1 (305) 555-0123</div>
 #             </div>
-#           </div>
+            </div>
 
             <div className="contact-method">
               <div className="method-icon">
