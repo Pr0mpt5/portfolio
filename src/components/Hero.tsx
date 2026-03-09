@@ -71,7 +71,7 @@ export const Hero: React.FC = () => {
             <button className="btn-primary" onClick={handleScroll}>
               View My Work
             </button>
-            <button className="btn-secondary">Download Resume</button>
+         {/*<button className="btn-secondary">Download Resume</button>*/}
           </div>
         </div>
 
